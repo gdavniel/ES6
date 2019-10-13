@@ -44,6 +44,7 @@ function saludar() {
 }
 
 // Funcion Expresiva
-const saludar2 = () => console.log('hola');
+const saludar2 = (nombre='luis') => console.log(`hola ${nombre}`);
 
 saludar2()
+saludar2('carlos')
