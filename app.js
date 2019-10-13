@@ -33,3 +33,17 @@ const trabajo = "medico"
 console.log("nombre: " + nombre + " trabajo: " + trabajo);
 
 console.log(`nombre: ${nombre} trabajo: ${trabajo}`);
+
+//
+
+saludar()
+// Funcion Declarativa
+function saludar() {
+
+    console.log('hola');
+}
+
+// Funcion Expresiva
+const saludar2 = () => console.log('hola');
+
+saludar2()
