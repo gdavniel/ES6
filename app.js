@@ -75,4 +75,25 @@ const tarea3 = new Tarea('tarea 3')
 
 console.log(tarea1, tarea2, tarea3, tarea1.mostrarInfo());
 
+// object destructuring
+
+const carro = {
+    placa: 'U-234',
+    dueño: 'luis',
+    año: 2020,
+    info() {
+        console.log(this.placa)
+    }
+}
+
+const {placa:placaCarro, dueño, año} = carro
+
+console.log(placaCarro, dueño, año);
+
+carro.info()
+
+// object literal enhacement
+
+const persona1 = { nombre, trabajo }
+
 //
