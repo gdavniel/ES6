@@ -48,3 +48,31 @@ const saludar2 = (nombre='luis') => console.log(`hola ${nombre}`);
 
 saludar2()
 saludar2('carlos')
+
+// objeto literal
+
+const persona = {
+    nombre,
+    trabajo,
+    edad: 20
+}
+
+console.log(persona, persona.nombre, persona['edad']);
+
+// object constructor
+
+function Tarea(nombre) {
+    this.nombre = nombre
+}
+
+Tarea.prototype.mostrarInfo = function(){
+    return `nombre tarea: ${this.nombre}`
+}
+
+const tarea1 = new Tarea('tarea 1')
+const tarea2 = new Tarea('tarea 2')
+const tarea3 = new Tarea('tarea 3')
+
+console.log(tarea1, tarea2, tarea3, tarea1.mostrarInfo());
+
+//
