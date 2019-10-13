@@ -96,4 +96,37 @@ carro.info()
 
 const persona1 = { nombre, trabajo }
 
-//
+// arreglos
+
+const titulos = ['h1', 'h2', 'h3', 'h4', 'h5']
+
+titulos.map(tag => {
+    console.log(`<${tag}>title</${tag}>`); 
+})
+
+console.log(Object.keys(carro));
+console.log(Object.keys(titulos));
+
+// spread operator
+
+const arregloN = [titulos, titulos]
+console.log(arregloN);
+
+const arregloN2 = [...titulos, ...titulos]
+console.log(arregloN2);
+
+const [h5] = [...titulos].reverse()
+console.log(h5);
+
+// en arreglos la destructuracion es por orden? en objetos por su clave?
+const [destructurarPrimerElemento] = titulos.reverse()
+
+console.log(destructurarPrimerElemento);
+
+function suma(a, b, c) {
+    console.log(a + b + c);
+}
+
+const numeros = [1, 2, 3]
+
+suma(...numeros)
