@@ -130,3 +130,37 @@ function suma(a, b, c) {
 const numeros = [1, 2, 3]
 
 suma(...numeros)
+
+// array methods
+
+const personas = [
+    {
+        nombre: 'luis',
+        edad: 20
+    },
+    {
+        nombre: 'carlos',
+        edad: 25
+    },
+    {
+        nombre: 'juan',
+        edad: 27
+    }
+]
+
+// encuentra todas las coincidencias posibles(recorre todo el arreglo)
+
+const mayores = personas.filter( persona => {
+    return persona.edad > 24
+})
+console.log(mayores);
+
+// encuentra la primera coincidencia y sale de la funcion
+
+const juan = personas.find(persona => {
+    return persona.nombre === 'juan'
+})
+console.log(juan);
+
+
+
